@@ -2,7 +2,7 @@
   "name": "rick-and-morty-api",
   "version": "1.0.0",
   "description": "Project to consume Rick and Morty API",
-  "main": "dist/app.js",
+  "main": "dist/src/app.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
