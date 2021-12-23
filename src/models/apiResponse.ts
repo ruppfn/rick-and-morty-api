@@ -3,9 +3,9 @@ export default interface ApiResponse<Resource> {
   results: Array<Resource>;
 }
 
-interface ResponseInfo {
+export interface ResponseInfo {
   count: number;
   pages: number;
   next: string;
-  prev: string
+  prev: string | null;
 }
