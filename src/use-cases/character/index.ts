@@ -1,7 +1,8 @@
 import ApiCaller from '../apiCaller';
 import Character from '../../models/character';
+import BaseUseCase from '../baseUseCase';
 
-export default class CharacterUseCases {
+export default class CharacterUseCases implements BaseUseCase {
   private readonly RESOURCE = 'character';
 
   private readonly baseUrl: string;
@@ -13,7 +14,7 @@ export default class CharacterUseCases {
     this.apiCaller = new ApiCaller<Character>(this.baseUrl, this.RESOURCE);
   }
 
-  public async getAllCharacters(): Promise<Array<Character>> {
+  public async getAll(): Promise<Array<Character>> {
     return this.apiCaller.getAll();
   }
 }
