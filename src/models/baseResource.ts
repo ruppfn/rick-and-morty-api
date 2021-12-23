@@ -1,5 +1,5 @@
 export default interface BaseResource {
-  id: string;
+  id: number;
   name: string;
   url: string;
   created: string;
